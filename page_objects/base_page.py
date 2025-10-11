@@ -10,7 +10,7 @@ class BasePage:
         self.wait = WebDriverWait(driver, timeout)
 
     def find(self, locator):
-        logger.info(f"Finding element with locator: {locator}")
+        logger.info("Finding element with locator:")
         element = self.wait.until(EC.presence_of_element_located(locator))
         logger.info(f"Element found: {locator}")
         return element
