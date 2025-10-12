@@ -30,3 +30,10 @@ def pytest_configure(config):
     config.option.htmlpath = htmlpath
     config.option.self_contained_html = True
 
+@pytest.hookimpl(tryfirst=True)
+def pytest_runtest_setup(item):
+    logger.info(f"========== STARTING TEST: {item.name} ==========")
+
+@pytest.hookimpl(trylast=True)
+def pytest_runtest_teardown(item):
+    logger.info(f"========== FINISHED TEST: {item.name} ==========")

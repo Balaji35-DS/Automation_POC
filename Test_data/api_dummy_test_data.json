@@ -1,0 +1,8 @@
+{
+  "valid_limit": 5,
+  "valid_product_id": 1,
+  "invalid_product_id": 9999,
+  "new_product_title": "Test Product",
+  "new_product_price": 100,
+  "price_only": 50
+}

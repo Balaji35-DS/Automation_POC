@@ -10,31 +10,29 @@ class BasePage:
         self.wait = WebDriverWait(driver, timeout)
 
     def find(self, locator):
-        logger.info("Finding element with locator:")
-        element = self.wait.until(EC.presence_of_element_located(locator))
-        logger.info(f"Element found: {locator}")
-        return element
+        logger.info(f"Finding element: {locator}")
+        return self.wait.until(EC.presence_of_element_located(locator))
 
     def click(self, locator):
         logger.info(f"Clicking element: {locator}")
         self.find(locator).click()
 
     def type(self, locator, text):
-        logger.info(f"Typing text into element: {locator}")
+        logger.info(f"Typing into element:{locator}")
         elem = self.find(locator)
         elem.clear()
         elem.send_keys(text)
 
     def get_text(self, locator):
-        logger.info(f"Getting text from element: {locator}")
-        return self.find(locator).text
+        text = self.find(locator).text
+        logger.info(f"Reading text from element: {locator} -> {text}")
+        return text
 
     def is_visible(self, locator):
-        logger.info(f"Checking visibility of element: {locator}")
         try:
-            self.wait.until(EC.visibility_of_element_located(locator))
-            logger.info(f"Element is visible: {locator}")
-            return True
+            visible = self.wait.until(EC.visibility_of_element_located(locator))
+            logger.info(f"Element visible: {locator}")
+            return True if visible else False
         except:
-            logger.warning(f"Element NOT visible: {locator}")
+            logger.warning(f"Element not visible: {locator}")
             return False

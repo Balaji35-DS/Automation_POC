@@ -1,3 +1,5 @@
+import time
+
 from page_objects.base_page import BasePage
 from locators.login_locators import LoginLocators
 from config.config import Config
@@ -14,23 +16,18 @@ class LoginPage(BasePage):
         logger.info(f"Opening login page: {self.url}")
         self.driver.get(self.url)
 
-    def enter_username(self, username):
-        logger.info("Entering username")
+    def login(self, username, password):
+        logger.info("Performing login action")
         self.type(LoginLocators.USERNAME_INPUT, username)
-
-    def enter_password(self, password):
-        logger.info("Entering password")
         self.type(LoginLocators.PASSWORD_INPUT, password)
-
-    def click_login(self):
-        logger.info("Clicking login button")
+        time.sleep(1)
         self.click(LoginLocators.LOGIN_BUTTON)
 
-    def get_message(self):
-        message = self.get_text(LoginLocators.SUCCESS_MESSAGE)
+    def is_logout_button_visible(self):
+        logger.info("Checking if logout button is visible")
+        return self.is_visible(LoginLocators.LOGOUT_BUTTON)
+
+    def get_error_message(self):
+        message = self.get_text(LoginLocators.ERROR_MESSAGE)
         logger.info(f"Success message displayed: {message}")
         return message
-
-    def click_logout(self):
-        logger.info("Clicking logout")
-        self.click(LoginLocators.LOGOUT_BUTTON)

@@ -1,0 +1,4 @@
+2025-10-12 22:31:53,911 - INFO - CONFTST - ========== STARTING TEST: test_create_product_negative_missing_title ==========
+2025-10-12 22:31:53,914 - INFO - API_DUMMY_TESTS - === Negative: Create Product Missing Title ===
+2025-10-12 22:31:53,915 - INFO - API_HELPER_DUMMY - Creating product without title, price: 50
+2025-10-12 22:32:36,864 - INFO - CONFTST - ========== FINISHED TEST: test_create_product_negative_missing_title ==========
