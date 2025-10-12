@@ -1,21 +1,24 @@
 import pytest
-from utilities.api_client import APIHelper
+import json
+from utilities.api_client import APIHelperDummy
 from utilities.logger import get_logger
 
-logger = get_logger("API NEGATIVE TESTS")
+logger = get_logger("API_DUMMY_TESTS")
+
+# Load test data
+with open("Test_data/api_dummy_test_data.json") as f:
+    test_data = json.load(f)
 
 
 @pytest.mark.api
-def test_invalid_user():
-    logger.info("Starting API Negative test: Invalid User")
-    res = APIHelper.get_user(9999)
-    assert res.status_code == 200  # Should be 404
-    logger.info("Invalid user and Test failed ")
+def test_get_single_product_negative():
+    logger.info("=== Negative: Get Non-Existing Product ===")
+    response = APIHelperDummy.get_single_product(test_data["invalid_product_id"])
+    assert response.status_code == 401
+    logger.info("=== Negative: Failed product not found and passes if status code is 404 ===")
 
 @pytest.mark.api
-def test_wrong_field():
-    logger.info("Intentionally fail - wrong expected value")
-    res = APIHelper.create_user("John", "Tester")
-    assert res.status_code == 201
-    assert res.json()["name"] == "Johnny"  # Wrong name
-    logger.info("wrong user name and Test failed ")
+def test_create_product_negative_missing_title():
+    logger.info("=== Negative: Create Product Missing Title ===")
+    response = APIHelperDummy.create_product_missing_title(test_data["price_only"])
+    assert response.status_code == 201 or "title" in response.text

@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from config.config import Config
 from utilities.logger import get_logger
 
@@ -9,6 +8,7 @@ def get_driver():
     try:
         logger.info("Initializing Chrome WebDriver...")
         driver = webdriver.Chrome()
+        driver.maximize_window()
         driver.implicitly_wait(Config.IMPLICIT_WAIT)
         return driver
     except Exception as e:

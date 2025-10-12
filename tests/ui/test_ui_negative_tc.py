@@ -7,25 +7,21 @@ logger = get_logger("UI Negative Tests")
 
 
 @pytest.mark.ui
-def test_invalid_username(driver):
-    logger.info("Starting UI Negative test case: Login")
-    login = LoginPage(driver)
-    login.open_login_page()
-    login.enter_username(TestData.INVALID_USERNAME)
-    login.enter_password(TestData.VALID_PASSWORD)
-    login.click_login()
-    # Actual message is "Your username is invalid!"
-    assert "You logged into a secure area!" in login.get_message()
-    logger.info("Invali username and Login test failed")
+def test_invalid_password(driver):
+    logger.info("=== Starting Negative Test: Invalid Password ===")
+    login_page = LoginPage(driver)
+    login_page.open_login_page()
+    login_page.login(TestData.VALID_USERNAME, TestData.INVALID_PASSWORD)
+    error_msg = login_page.get_error_message()
+    assert TestData.ERROR_INVALID_LOGIN in error_msg, f"Unexpected error message: {error_msg}"
+    logger.info("Negative login test handled error as expected")
 
 @pytest.mark.ui
-def test_invalid_password(driver):
-    logger.info("Starting UI Negative test case: Invalid password")
-    login = LoginPage(driver)
-    login.open_login_page()
-    login.enter_username(TestData.VALID_USERNAME)
-    login.enter_password(TestData.INVALID_PASSWORD)
-    login.click_login()
-    # Actual message is "Your password is invalid!"
-    assert "You logged into a secure area!" in login.get_message()
-    logger.info("Invali password and Login test failed")
+def test_invalid_credentials(driver):
+    logger.info("=== Starting Negative Test: Empty Credentials ===")
+    login_page = LoginPage(driver)
+    login_page.open_login_page()
+    login_page.login(TestData.INVALID_USERNAME, TestData.INVALID_PASSWORD)
+    error_msg = login_page.get_error_message()
+    assert TestData.ERROR_INVALID_LOGIN in error_msg, f"Unexpected error message: {error_msg}"
+    logger.info("Negative login test handled error as expected")

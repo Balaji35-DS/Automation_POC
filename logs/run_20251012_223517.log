@@ -1,0 +1,9 @@
+2025-10-12 22:35:21,541 - INFO - UI Positive Tests - === Starting Positive Test: Page Title Validation ===
+2025-10-12 22:35:21,542 - INFO - LOGIN_PAGE - Opening login page: https://demoqa.com/login
+2025-10-12 22:35:27,629 - INFO - LOGIN_PAGE - Performing login action
+2025-10-12 22:35:27,630 - INFO - BASE_PAGE - Typing into element:('id', 'userName')
+2025-10-12 22:35:27,631 - INFO - BASE_PAGE - Finding element: ('id', 'userName')
+2025-10-12 22:35:27,925 - INFO - BASE_PAGE - Typing into element:('css selector', 'input#password')
+2025-10-12 22:35:27,926 - INFO - BASE_PAGE - Finding element: ('css selector', 'input#password')
+2025-10-12 22:35:29,057 - INFO - BASE_PAGE - Clicking element: ('xpath', "//button[text()='Login']")
+2025-10-12 22:35:29,058 - INFO - BASE_PAGE - Finding element: ('xpath', "//button[text()='Login']")

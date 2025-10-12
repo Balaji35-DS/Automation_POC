@@ -6,22 +6,19 @@ from utilities.logger import get_logger
 logger = get_logger("UI Positive Tests")
 @pytest.mark.ui
 def test_valid_login(driver):
-    logger.info("Starting UI test: Login")
-    login = LoginPage(driver)
-    login.open_login_page()
-    login.enter_username(TestData.VALID_USERNAME)
-    login.enter_password(TestData.VALID_PASSWORD)
-    login.click_login()
-    assert "You logged into a secure area!" in login.get_message()
-    logger.info("Login test completed")
+    logger.info("=== Starting Positive Test: Valid Login ===")
+    login_page = LoginPage(driver)
+    login_page.open_login_page()
+    login_page.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD)
+    assert login_page.is_logout_button_visible(), "Logout button should be visible after successful login"
+    logger.info("Valid login test passed")
 
 
 @pytest.mark.ui
-def test_blank_credentials(driver):
-    """Should pass - blank credentials check"""
-    login = LoginPage(driver)
-    login.open_login_page()
-    login.enter_username("")
-    login.enter_password("")
-    login.click_login()
-    assert "Your username is invalid!" in login.get_message()
+def test_page_title_after_login(driver):
+    logger.info("=== Starting Positive Test: Page Title Validation ===")
+    login_page = LoginPage(driver)
+    login_page.open_login_page()
+    login_page.login(TestData.VALID_USERNAME, TestData.VALID_PASSWORD)
+    assert TestData.EXPECTED_TITLE in driver.title, "Page title should contain DEMOQA"
+    logger.info("Page title validation test passed")

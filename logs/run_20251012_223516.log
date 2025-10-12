@@ -1,0 +1,53 @@
+2025-10-12 22:35:17,027 - INFO - CONFTST - ========== STARTING TEST: test_invalid_credentials ==========
+2025-10-12 22:35:17,027 - INFO - CONFTST - ========== STARTING TEST: test_invalid_password ==========
+====
+2025-10-12 22:35:17,027 - INFO - CONFTST - Initializing WebDriver...
+2025-10-12 22:35:17,027 - INFO - CONFTST - ========== STARTING TEST: test_valid_login ==========
+2025-10-12 22:35:17,028 - INFO - BROWSER_SETUP - Initializing Chrome WebDriver...
+2025-10-12 22:35:17,028 - INFO - CONFTST - Initializing WebDriver...
+2025-10-12 22:35:17,028 - INFO - CONFTST - Initializing WebDriver...
+2025-10-12 22:35:17,028 - INFO - BROWSER_SETUP - Initializing Chrome WebDriver...
+2025-10-12 22:35:17,031 - INFO - BROWSER_SETUP - Initializing Chrome WebDriver...
+2025-10-12 22:35:17,031 - INFO - BROWSER_SETUP - Initializing Chrome WebDriver...
+2025-10-12 22:35:20,407 - INFO - UI Negative Tests - === Starting Negative Test: Empty Credentials ===
+2025-10-12 22:35:20,407 - INFO - LOGIN_PAGE - Opening login page: https://demoqa.com/login
+2025-10-12 22:35:21,054 - INFO - UI Positive Tests - === Starting Positive Test: Valid Login ===
+2025-10-12 22:35:21,054 - INFO - LOGIN_PAGE - Opening login page: https://demoqa.com/login
+2025-10-12 22:35:21,558 - INFO - UI Negative Tests - === Starting Negative Test: Invalid Password ===
+2025-10-12 22:35:21,559 - INFO - LOGIN_PAGE - Opening login page: https://demoqa.com/login
+2025-10-12 22:35:27,019 - INFO - LOGIN_PAGE - Performing login action
+2025-10-12 22:35:27,020 - INFO - BASE_PAGE - Typing into element:('id', 'userName')
+2025-10-12 22:35:27,020 - INFO - BASE_PAGE - Finding element: ('id', 'userName')
+2025-10-12 22:35:27,182 - INFO - BASE_PAGE - Typing into element:('css selector', 'input#password')
+2025-10-12 22:35:27,183 - INFO - BASE_PAGE - Finding element: ('css selector', 'input#password')
+2025-10-12 22:35:27,498 - INFO - LOGIN_PAGE - Performing login action
+2025-10-12 22:35:27,501 - INFO - BASE_PAGE - Typing into element:('id', 'userName')
+2025-10-12 22:35:27,502 - INFO - BASE_PAGE - Finding element: ('id', 'userName')
+2025-10-12 22:35:27,643 - INFO - BASE_PAGE - Typing into element:('css selector', 'input#password')
+2025-10-12 22:35:27,644 - INFO - BASE_PAGE - Finding element: ('css selector', 'input#password')
+2025-10-12 22:35:28,328 - INFO - BASE_PAGE - Clicking element: ('xpath', "//button[text()='Login']")
+2025-10-12 22:35:28,329 - INFO - BASE_PAGE - Finding element: ('xpath', "//button[text()='Login']")
+2025-10-12 22:35:28,431 - INFO - LOGIN_PAGE - Checking if logout button is visible
+2025-10-12 22:35:28,448 - INFO - LOGIN_PAGE - Performing login action
+2025-10-12 22:35:28,449 - INFO - BASE_PAGE - Typing into element:('id', 'userName')
+2025-10-12 22:35:28,449 - INFO - BASE_PAGE - Finding element: ('id', 'userName')
+2025-10-12 22:35:28,585 - INFO - BASE_PAGE - Typing into element:('css selector', 'input#password')
+2025-10-12 22:35:28,585 - INFO - BASE_PAGE - Finding element: ('css selector', 'input#password')
+2025-10-12 22:35:28,859 - INFO - BASE_PAGE - Clicking element: ('xpath', "//button[text()='Login']")
+2025-10-12 22:35:28,859 - INFO - BASE_PAGE - Finding element: ('xpath', "//button[text()='Login']")
+2025-10-12 22:35:29,714 - INFO - BASE_PAGE - Clicking element: ('xpath', "//button[text()='Login']")
+2025-10-12 22:35:29,714 - INFO - BASE_PAGE - Finding element: ('xpath', "//button[text()='Login']")
+2025-10-12 22:35:29,872 - INFO - BASE_PAGE - Finding element: ('id', 'name')
+2025-10-12 22:35:30,178 - INFO - BASE_PAGE - Element visible: ('xpath', "(//button[contains (@class, 'btn btn-primary')])[1]")
+2025-10-12 22:35:30,179 - INFO - UI Positive Tests - Valid login test passed
+2025-10-12 22:35:30,901 - INFO - BASE_PAGE - Reading text from element: ('id', 'name') -> Invalid username or password!
+2025-10-12 22:35:30,902 - INFO - LOGIN_PAGE - Success message displayed: Invalid username or password!
+2025-10-12 22:35:30,902 - INFO - UI Negative Tests - Negative login test handled error as expected
+2025-10-12 22:35:34,587 - INFO - CONFTST - WebDriver session ended.
+2025-10-12 22:35:34,588 - INFO - CONFTST - ========== FINISHED TEST: test_valid_login ==========
+2025-10-12 22:35:34,619 - INFO - CONFTST - WebDriver session ended.
+2025-10-12 22:35:34,620 - INFO - CONFTST - ========== FINISHED TEST: test_invalid_credentials ==========
+2025-10-12 22:35:34,714 - INFO - CONFTST - WebDriver session ended.
+2025-10-12 22:35:34,715 - INFO - CONFTST - ========== FINISHED TEST: test_page_title_after_login ==========
+2025-10-12 22:35:35,125 - INFO - CONFTST - WebDriver session ended.
+2025-10-12 22:35:35,125 - INFO - CONFTST - ========== FINISHED TEST: test_invalid_password ==========
