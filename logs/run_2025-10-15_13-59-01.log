@@ -1,0 +1,16 @@
+2025-10-15 13:59:01,464 - INFO - TEST_RUNNER - ========== STARTING TEST: test_get_single_product_positive ==========
+========
+2025-10-15 13:59:01,465 - INFO - TEST_RUNNER - ========== STARTING TEST: test_get_products_positive ==========
+2025-10-15 13:59:01,466 - INFO - API_DUMMY_TESTS - === Positive: Get Single Product ===
+2025-10-15 13:59:01,466 - INFO - API_DUMMY_TESTS - === Negative: Get Non-Existing Product ===
+2025-10-15 13:59:01,466 - INFO - API_HELPER_DUMMY - Fetching product with ID: 1
+2025-10-15 13:59:01,466 - INFO - API_DUMMY_TESTS - === Positive: Get Products ===
+sing Title ===
+2025-10-15 13:59:01,466 - INFO - API_HELPER_DUMMY - Fetching product with ID: 9999
+2025-10-15 13:59:01,467 - INFO - API_HELPER_DUMMY - Creating product without title, price: 50
+2025-10-15 13:59:01,467 - INFO - API_HELPER_DUMMY - Fetching products with limit:
+2025-10-15 13:59:02,565 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_single_product_positive ==========
+2025-10-15 13:59:02,589 - INFO - API_DUMMY_TESTS -  === Products are in Response ===
+2025-10-15 13:59:02,591 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_products_positive ==========
+2025-10-15 13:59:02,714 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_create_product_negative_missing_title ==========
+2025-10-15 13:59:02,753 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_single_product_negative ==========

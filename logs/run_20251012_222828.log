@@ -1,4 +1,0 @@
-2025-10-12 22:28:28,827 - INFO - CONFTST - ========== STARTING TEST: test_get_single_product_negative ==========
-2025-10-12 22:28:28,829 - INFO - API_DUMMY_TESTS - === Negative: Get Non-Existing Product ===
-2025-10-12 22:28:28,830 - INFO - API_HELPER_DUMMY - Fetching product with ID: 9999
-2025-10-12 22:29:11,938 - INFO - CONFTST - ========== FINISHED TEST: test_get_single_product_negative ==========

@@ -1,0 +1,58 @@
+2025-10-15 17:54:34,033 - INFO - TEST_RUNNER - ========== STARTING TEST: test_invalid_credentials ==========
+=
+2025-10-15 17:54:34,033 - INFO - TEST_RUNNER - ========== STARTING TEST: test_valid_login ==========
+2025-10-15 17:54:34,033 - INFO - TEST_RUNNER - ========== STARTING TEST: test_invalid_password ==========
+2025-10-15 17:54:34,033 - INFO - TEST_RUNNER - Initializing WebDriver...
+2025-10-15 17:54:34,033 - INFO - BROWSER_SETUP - Initializing Chrome WebDriver...
+2025-10-15 17:54:34,033 - INFO - TEST_RUNNER - Initializing WebDriver...
+2025-10-15 17:54:34,033 - INFO - TEST_RUNNER - Initializing WebDriver...
+2025-10-15 17:54:34,033 - INFO - BROWSER_SETUP - Initializing Chrome WebDriver...
+2025-10-15 17:54:34,033 - INFO - TEST_RUNNER - Initializing WebDriver...
+2025-10-15 17:54:34,036 - INFO - BROWSER_SETUP - Initializing Chrome WebDriver...
+2025-10-15 17:54:34,036 - INFO - BROWSER_SETUP - Initializing Chrome WebDriver...
+2025-10-15 17:54:37,223 - INFO - UI Positive Tests - === Starting Positive Test: Valid Login ===
+2025-10-15 17:54:37,224 - INFO - LOGIN_PAGE - Opening login page: https://demoqa.com/login
+2025-10-15 17:54:37,863 - INFO - UI Negative Tests - === Starting Negative Test: Invalid Password ===
+2025-10-15 17:54:37,863 - INFO - LOGIN_PAGE - Opening login page: https://demoqa.com/login
+2025-10-15 17:54:38,085 - INFO - UI Negative Tests - === Starting Negative Test: Empty Credentials ===
+2025-10-15 17:54:38,085 - INFO - LOGIN_PAGE - Opening login page: https://demoqa.com/login
+2025-10-15 17:54:47,303 - INFO - TEST_RUNNER - WebDriver session ended.
+2025-10-15 17:54:47,305 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_page_title_after_login ==========
+2025-10-15 17:54:54,674 - INFO - LOGIN_PAGE - Performing login action
+2025-10-15 17:54:54,674 - INFO - BASE_PAGE - Typing into element:('id', 'userName')
+2025-10-15 17:54:54,675 - INFO - BASE_PAGE - Finding element: ('id', 'userName')
+2025-10-15 17:54:54,799 - INFO - BASE_PAGE - Typing into element:('css selector', 'input#password')
+2025-10-15 17:54:54,800 - INFO - BASE_PAGE - Finding element: ('css selector', 'input#password')
+2025-10-15 17:54:55,898 - INFO - BASE_PAGE - Clicking element: ('xpath', "//button[text()='Login']")
+2025-10-15 17:54:55,899 - INFO - BASE_PAGE - Finding element: ('xpath', "//button[text()='Login']")
+2025-10-15 17:54:55,966 - INFO - LOGIN_PAGE - Checking if logout button is visible
+2025-10-15 17:54:58,254 - INFO - BASE_PAGE - Element visible: ('xpath', "(//button[contains (@class, 'btn btn-primary')])[1]")
+2025-10-15 17:54:58,254 - INFO - UI Positive Tests - Valid login test passed
+2025-10-15 17:55:00,593 - INFO - LOGIN_PAGE - Performing login action
+2025-10-15 17:55:00,594 - INFO - BASE_PAGE - Typing into element:('id', 'userName')
+2025-10-15 17:55:00,594 - INFO - BASE_PAGE - Finding element: ('id', 'userName')
+2025-10-15 17:55:00,715 - INFO - BASE_PAGE - Typing into element:('css selector', 'input#password')
+2025-10-15 17:55:00,715 - INFO - BASE_PAGE - Finding element: ('css selector', 'input#password')
+2025-10-15 17:55:01,808 - INFO - BASE_PAGE - Clicking element: ('xpath', "//button[text()='Login']")
+2025-10-15 17:55:01,808 - INFO - BASE_PAGE - Finding element: ('xpath', "//button[text()='Login']")
+2025-10-15 17:55:01,890 - INFO - BASE_PAGE - Finding element: ('id', 'name')
+2025-10-15 17:55:02,509 - INFO - TEST_RUNNER - WebDriver session ended.
+2025-10-15 17:55:02,510 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_valid_login ==========
+2025-10-15 17:55:03,321 - INFO - BASE_PAGE - Reading text from element: ('id', 'name') -> Invalid username or password!
+2025-10-15 17:55:03,321 - INFO - LOGIN_PAGE - Success message displayed: Invalid username or password!
+2025-10-15 17:55:03,322 - INFO - UI Negative Tests - Negative login test handled error as expected
+2025-10-15 17:55:07,551 - INFO - TEST_RUNNER - WebDriver session ended.
+2025-10-15 17:55:07,553 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_invalid_password ==========
+2025-10-15 17:55:30,120 - INFO - LOGIN_PAGE - Performing login action
+2025-10-15 17:55:30,120 - INFO - BASE_PAGE - Typing into element:('id', 'userName')
+2025-10-15 17:55:30,121 - INFO - BASE_PAGE - Finding element: ('id', 'userName')
+2025-10-15 17:55:30,206 - INFO - BASE_PAGE - Typing into element:('css selector', 'input#password')
+2025-10-15 17:55:30,206 - INFO - BASE_PAGE - Finding element: ('css selector', 'input#password')
+2025-10-15 17:55:31,282 - INFO - BASE_PAGE - Clicking element: ('xpath', "//button[text()='Login']")
+2025-10-15 17:55:31,282 - INFO - BASE_PAGE - Finding element: ('xpath', "//button[text()='Login']")
+2025-10-15 17:55:31,346 - INFO - BASE_PAGE - Finding element: ('id', 'name')
+2025-10-15 17:55:32,655 - INFO - BASE_PAGE - Reading text from element: ('id', 'name') -> Invalid username or password!
+2025-10-15 17:55:32,656 - INFO - LOGIN_PAGE - Success message displayed: Invalid username or password!
+2025-10-15 17:55:32,656 - INFO - UI Negative Tests - Negative login test handled error as expected
+2025-10-15 17:55:36,851 - INFO - TEST_RUNNER - WebDriver session ended.
+2025-10-15 17:55:36,852 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_invalid_credentials ==========

@@ -1,0 +1,20 @@
+2025-10-15 17:53:56,748 - INFO - TEST_RUNNER - ========== STARTING TEST: test_get_single_product_negative ==========
+2025-10-15 17:53:56,748 - INFO - TEST_RUNNER - ========== STARTING TEST: test_get_products_positive ==========
+2025-10-15 17:53:56,749 - INFO - TEST_RUNNER - ========== STARTING TEST: test_create_product_negative_missing_title ==========
+2025-10-15 17:53:56,749 - INFO - API_DUMMY_TESTS - === Negative: Get Non-Existing Product ===
+2025-10-15 17:53:56,749 - INFO - API_HELPER_DUMMY - Fetching product with ID: 9999
+2025-10-15 17:53:56,749 - INFO - API_DUMMY_TESTS - === Negative: Create Product Missing Title ===
+2025-10-15 17:53:56,749 - INFO - TEST_RUNNER - ========== STARTING TEST: test_get_single_product_positive ==========
+2025-10-15 17:53:56,750 - INFO - API_DUMMY_TESTS - === Positive: Get Products ===
+2025-10-15 17:53:56,752 - INFO - API_HELPER_DUMMY - Fetching products with limit:
+2025-10-15 17:53:56,752 - INFO - API_HELPER_DUMMY - Creating product without title, price: 50
+2025-10-15 17:53:56,753 - INFO - API_DUMMY_TESTS - === Positive: Get Single Product (ID: 1) ===
+2025-10-15 17:53:56,753 - INFO - API_HELPER_DUMMY - Fetching product with ID: 1
+2025-10-15 17:53:57,775 - INFO - API_DUMMY_TESTS - API returned status 200
+2025-10-15 17:53:57,777 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_products_positive ==========
+2025-10-15 17:53:57,801 - INFO - API_DUMMY_TESTS - Product 1 fetched successfully
+2025-10-15 17:53:57,803 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_single_product_positive ==========
+2025-10-15 17:53:57,857 - WARNING - API_DUMMY_TESTS - Expected failure - Missing title validation error
+2025-10-15 17:53:57,879 - WARNING - API_DUMMY_TESTS - Expected failure - Product not found (status 404)
+2025-10-15 17:53:57,881 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_single_product_negative ==========
+2025-10-15 17:53:57,948 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_create_product_negative_missing_title ==========

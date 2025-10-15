@@ -1,0 +1,14 @@
+2025-10-15 11:03:03,379 - INFO - TEST_RUNNER - ========== STARTING TEST: test_invalid_password ==========
+2025-10-15 11:03:03,379 - INFO - TEST_RUNNER - Initializing WebDriver...
+2025-10-15 11:03:03,379 - INFO - BROWSER_SETUP - Initializing Chrome WebDriver...
+2025-10-15 11:03:08,462 - INFO - UI Negative Tests - === Starting Negative Test: Invalid Password ===
+2025-10-15 11:03:08,462 - INFO - LOGIN_PAGE - Opening login page: https://demoqa.com/login
+2025-10-15 11:03:13,560 - INFO - LOGIN_PAGE - Performing login action
+2025-10-15 11:03:13,560 - INFO - BASE_PAGE - Typing into element:('id', 'userName')
+2025-10-15 11:03:13,561 - INFO - BASE_PAGE - Finding element: ('id', 'userName')
+2025-10-15 11:03:13,807 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_invalid_password ==========
+2025-10-15 11:03:13,810 - INFO - TEST_RUNNER - ========== STARTING TEST: test_invalid_credentials ==========
+2025-10-15 11:03:13,811 - INFO - UI Negative Tests - === Starting Negative Test: Empty Credentials ===
+2025-10-15 11:03:13,812 - INFO - LOGIN_PAGE - Opening login page: https://demoqa.com/login
+2025-10-15 11:03:17,946 - INFO - TEST_RUNNER - WebDriver session ended.
+2025-10-15 11:03:17,947 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_invalid_credentials ==========

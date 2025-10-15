@@ -1,0 +1,4 @@
+2025-10-15 13:42:45,764 - INFO - TEST_RUNNER - ========== STARTING TEST: test_get_single_product_positive ==========
+2025-10-15 13:42:45,766 - INFO - API_DUMMY_TESTS - === Positive: Get Single Product ===
+2025-10-15 13:42:45,767 - INFO - API_HELPER_DUMMY - Fetching product with ID: 1
+2025-10-15 13:42:46,546 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_single_product_positive ==========

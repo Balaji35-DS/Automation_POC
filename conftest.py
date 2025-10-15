@@ -7,7 +7,7 @@ from datetime import datetime
 from utilities.logger import get_logger
 from utilities.browser_setup import get_driver
 
-logger = get_logger('CONFTST')
+logger = get_logger('TEST_RUNNER')
 
 @pytest.fixture(scope="session")
 def driver():

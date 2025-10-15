@@ -7,9 +7,9 @@ logger = get_logger("API_HELPER_DUMMY")
 class APIHelperDummy:
 
     @staticmethod
-    def get_products(limit):
-        logger.info(f"Fetching products with limit: {limit}")
-        return requests.get(f"{Config.API_BASE_URL}/products", params={"limit": limit})
+    def get_products():
+        logger.info(f"Fetching products with limit:")
+        return requests.get(f"{Config.API_BASE_URL}/products")
 
     @staticmethod
     def get_single_product(product_id):

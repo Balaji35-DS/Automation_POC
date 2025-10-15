@@ -1,0 +1,4 @@
+2025-10-15 12:12:44,572 - INFO - TEST_RUNNER - ========== STARTING TEST: test_create_product_negative_missing_title ==========
+2025-10-15 12:12:44,573 - INFO - API_DUMMY_TESTS - === Negative: Create Product Missing Title ===
+2025-10-15 12:12:44,574 - INFO - API_HELPER_DUMMY - Creating product without title, price: 50
+2025-10-15 12:13:29,556 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_create_product_negative_missing_title ==========

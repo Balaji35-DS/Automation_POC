@@ -1,0 +1,2 @@
+2025-10-15 13:43:58,174 - INFO - API_DUMMY_TESTS - === Negative: Create Product Missing Title ===
+2025-10-15 13:43:58,175 - INFO - API_HELPER_DUMMY - Creating product without title, price: 50
