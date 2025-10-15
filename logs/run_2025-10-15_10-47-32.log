@@ -1,0 +1,4 @@
+2025-10-15 10:47:32,582 - INFO - TEST_RUNNER - ========== STARTING TEST: test_get_products_positive ==========
+2025-10-15 10:47:32,584 - INFO - API_DUMMY_TESTS - === Positive: Get Products ===
+2025-10-15 10:47:32,585 - INFO - API_HELPER_DUMMY - Fetching products with limit:
+2025-10-15 10:48:15,751 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_products_positive ==========

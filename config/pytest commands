@@ -1,0 +1,35 @@
+Merge without PR (local)
+
+git checkout main
+git pull origin main        # make sure main is up to date
+git merge feature/my-branch
+git push origin main
+
+# After new changes the commands need to follow
+git status
+git checkout -b feature/my-branch
+git pull origin main
+git add .
+git commit -m "Your commit message"
+git push -u origin feature/my-branch
+
+
+#commits
+
+git commit -m "text"       # new commit with text
+git code --oneline         # to check all commits
+git revert head  # to go back to previous commit
+
+#to link git to github
+git remote add origin #clone with remote link http link.
+
+#git add and statu
+
+git add .         # add alal modified and new file sto staging area.
+git status        # to check status
+
+git branch -d <branch name>  # delete a local branch if it is fully merged
+git branch -D <branch name>   #force delete a local branch
+git push origin --delete <branch name>  # delete a remote branch
+git branch -m <old branch name> <new branch name> rename a branch
+git branch -r # lists remote branches

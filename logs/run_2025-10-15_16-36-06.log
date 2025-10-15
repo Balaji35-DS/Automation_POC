@@ -1,0 +1,11 @@
+2025-10-15 16:36:06,597 - INFO - TEST_RUNNER - ========== STARTING TEST: test_get_single_product_positive ==========
+2025-10-15 16:36:06,598 - INFO - TEST_RUNNER - ========== STARTING TEST: test_get_products_positive ==========
+2025-10-15 16:36:06,598 - INFO - API_DUMMY_TESTS - === Positive: Get Single Product (ID: 1) ===
+2025-10-15 16:36:06,599 - INFO - API_DUMMY_TESTS - === Positive: Get Products ===
+2025-10-15 16:36:06,599 - INFO - API_HELPER_DUMMY - Fetching product with ID: 1
+2025-10-15 16:36:06,599 - INFO - API_HELPER_DUMMY - Fetching products with limit:
+2025-10-15 16:36:49,813 - INFO - API_DUMMY_TESTS - Product 1 fetched successfully
+2025-10-15 16:36:49,816 - INFO - API_DUMMY_TESTS - Correct product ID returned: 1
+2025-10-15 16:36:49,820 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_single_product_positive ==========
+2025-10-15 16:36:49,826 - INFO - API_DUMMY_TESTS - API returned status 200
+2025-10-15 16:36:49,828 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_products_positive ==========

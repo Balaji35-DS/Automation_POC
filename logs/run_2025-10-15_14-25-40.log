@@ -1,0 +1,5 @@
+2025-10-15 14:25:40,680 - INFO - TEST_RUNNER - ========== STARTING TEST: test_create_product_negative_missing_title ==========
+2025-10-15 14:25:40,681 - INFO - API_DUMMY_TESTS - === Negative: Create Product Missing Title ===
+2025-10-15 14:25:40,682 - INFO - API_HELPER_DUMMY - Creating product without title, price: 50
+2025-10-15 14:25:41,587 - ERROR - API_DUMMY_TESTS - Unexpected status code: 404
+2025-10-15 14:25:41,661 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_create_product_negative_missing_title ==========

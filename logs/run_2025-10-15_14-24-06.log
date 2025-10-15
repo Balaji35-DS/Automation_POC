@@ -1,0 +1,5 @@
+2025-10-15 14:24:06,181 - INFO - TEST_RUNNER - ========== STARTING TEST: test_get_single_product_negative ==========
+2025-10-15 14:24:06,183 - INFO - API_DUMMY_TESTS - === Negative: Get Non-Existing Product ===
+2025-10-15 14:24:06,184 - INFO - API_HELPER_DUMMY - Fetching product with ID: 9999
+2025-10-15 14:24:07,055 - WARNING - API_DUMMY_TESTS - Expected failure - Product not found (status 404)
+2025-10-15 14:24:07,057 - INFO - TEST_RUNNER - ========== FINISHED TEST: test_get_single_product_negative ==========
